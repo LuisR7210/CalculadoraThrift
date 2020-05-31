@@ -15,4 +15,4 @@ RUN ant compile
 
 EXPOSE 8080
 WORKDIR /home/CalculadoraThrift/Servidor/
-CMD ["ant run"]
+CMD ant run

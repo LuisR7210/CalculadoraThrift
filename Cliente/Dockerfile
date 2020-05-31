@@ -15,4 +15,4 @@ RUN thrift -r --gen py ThriftCalculadora.thrift
 
 EXPOSE 8080
 WORKDIR /home/CalculadoraThrift/Cliente/
-CMD ["python3", "ClienteCalculadora.py"]
+CMD python3 ClienteCalculadora.py
