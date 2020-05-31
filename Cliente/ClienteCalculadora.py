@@ -8,7 +8,7 @@ from thrift.transport import TTransport
 from thrift.protocol import TBinaryProtocol
 from ThriftCalculadora import CalculadoraBasica
 
-transporte = TSocket.TSocket("localhost", 8080)
+transporte = TSocket.TSocket("server", 8080)
 transporte = TTransport.TBufferedTransport(transporte)
 protocolo = TBinaryProtocol.TBinaryProtocol(transporte)
 cliente = CalculadoraBasica.Client(protocolo)
